@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Add course</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="header">
+     <img class="logo" src="/html-main/images/7eaf2c45965894defed0c8ae2a4e2140.jpg" />
+     <div class="header-links">
+      <a href="index.html">Home</a> 
+      <a href="#">your courses</a>
+      <a href="#">Contact</a>
+      <a class="btn" href="Add_course.html">Add course</a>
+    </div>
+  </nav>
+   <div class="modern">
+    <form method="POST" align="center">
+        
+        <div class="form-group">
+            <label for="student-name">student name:</label>
+            <input type="text" id="student-name" name="student-name" placeholder="enter your name "required>
+        </div>
+
+        <div class="form-group">
+            <label for="student-code">your code :</label>
+            <input type="text" id="student-code" name="student-code" placeholder="example: 20251060" required>
+        </div>
+
+        <div class="form-group" align="center">
+            <label for="course">Select course :</label>
+            <select id="course" name="course" required>
+                <option value="" disabled selected>-- select one course from below  --</option>
+                <option value="pl">Programming Language (PL)</option>
+                <option value="electro">Electronics</option>
+                <option value="it">Information Technology (IT)</option>
+                <option value="math">Mathematics</option>
+                <option value="dm">Discrete Math (DM)</option>
+            </select>
+        </div>
+
+        <button type="submit"> submit</button>
+
+    </form>
+   </div>
+
+</body>
+</html>

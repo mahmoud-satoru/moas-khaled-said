@@ -1,0 +1,546 @@
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  /* هنا ضفنا مسامير التثبيت */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.btn {
+  background-color: #FB8500;
+  border-radius: 15px;
+  padding: 5px 15px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer; 
+}
+
+.btn:hover {
+  background-color: #FB8500;
+}
+
+.header-links a {
+  color: white;
+  padding: 5px 15px;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+.header-links a:hover {
+  background-color: #CAD2C5;
+  color: #000; /* my name is moaz*/
+}
+
+.landing-page {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
+  color: #ffffff;
+  border-radius: 0 0 50px 50px;
+}
+
+.landing-page-left-section {
+  width: 100%; /*love what you do*/
+  max-width: 500px; /*killer*/
+}
+
+.landing-page-search {
+  display: flex; 
+  align-items: center; /* and bla bla bla */
+  gap: 10px; 
+  margin-top: 15px; 
+}
+
+.landing-page-search input {
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  height: 30px;
+  padding: 0 15px; /* abslout cinema */
+  flex-grow: 1; 
+  max-width: 300px; 
+}
+
+.landing-page-search button {
+  height: 30px;
+}
+
+.landing-page-image-container img {
+  border-radius: 20px;
+  width: 100%; 
+  max-width: 250px; 
+}
+
+.trending-container {
+  padding: 25px 50px;
+}
+
+.trending-container span {
+  color: #ee626b;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.trending-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 15px; 
+}
+
+.trending-header h1 {
+  margin-top: 0;
+}
+
+.trending-cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.card {
+  width: 100%;
+  background-color: #EEEEEE;
+  border-radius: 20px;
+  overflow: hidden; 
+}
+
+.card .thumb {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px; /* لا إله إلا الله*/
+}
+
+.card-info img {
+  width: 50px;
+}
+
+.from-group {
+  border-radius: 5px;
+}
+
+form {
+  padding-block: 20px;
+  color: #000;
+}
+
+@media (max-width: 992px) {   
+  .header, .landing-page, .trending-container {     
+    padding: 20px 30px; 
+  } 
+  
+  .landing-page { 
+    flex-direction: column; 
+    text-align: center; 
+    gap: 40px; 
+  } 
+  
+  .landing-page-search { 
+    justify-content: center; 
+  } 
+} 
+
+@media (max-width: 600px) {
+  .header { 
+    flex-direction: column; 
+    gap: 15px; 
+    padding: 15px; 
+  } 
+  
+  .header-links { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 10px; 
+  } 
+  
+  .header, .landing-page, .trending-container { 
+    padding: 15px; 
+  } 
+  
+  .landing-page { 
+    border-radius: 0 0 30px 30px; 
+  } 
+  
+  .landing-page-image-container {
+    display: none;
+  }
+  
+  .trending-cards {
+    flex-direction: column;
+  }
+}
+
+.modern {
+  background-color:#d9730d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+form input {
+  background-color: transparent;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  outline: none;
+  color: #333;
+  padding: 12px 15px;
+  transition: all 0.3s ease;
+}
+
+form input:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.2);
+}
+
+form button {
+  background: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 12px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #004494;
+}
+/*page 3 your courses(table)*/
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f7f6;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  width: 100px;
+}
+
+.btn {
+  background-color: #FB8500;
+  border-radius: 15px;
+  padding: 5px 15px;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #FB8500;
+}
+
+.header-links a {
+  color: white;
+  padding: 5px 15px;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+.header-links a:hover {
+  background-color: #CAD2C5;
+  color: #000;
+}
+
+.landing-page {
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
+  color: #ffffff;
+  border-radius: 0 0 50px 50px;
+}
+
+.landing-page-left-section {
+  width: 100%;
+  max-width: 500px;
+}
+
+.landing-page-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.landing-page-search input {
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  height: 30px;
+  padding: 0 15px;
+  flex-grow: 1;
+  max-width: 300px;
+}
+
+.landing-page-search button {
+  height: 30px;
+}
+
+.landing-page-image-container img {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 250px;
+}
+
+.trending-container {
+  padding: 25px 50px;
+}
+
+.trending-container span {
+  color: #ee626b;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.trending-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.trending-header h1 {
+  margin-top: 0;
+}
+
+.trending-cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.card {
+  width: 100%;
+  background-color: #EEEEEE;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card .thumb {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+}
+
+.card-info img {
+  width: 50px;
+}
+
+.modern {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  padding: 20px;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+form input, form select {
+  background-color: transparent;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  outline: none;
+  color: #333;
+  padding: 12px 15px;
+  transition: all 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form input:focus, form select:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.2);
+}
+
+form button {
+  background: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 12px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+form button:hover {
+  background: #004494;
+}
+
+.table-container {
+  padding: 50px;
+  min-height: calc(100vh - 80px);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+thead {
+  background-color: #000;
+  color: #ffffff;
+}
+
+th, td {
+  padding: 15px 20px;
+  text-align: left;
+  border-bottom: 1px solid #eeeeee;
+}
+
+tbody tr:hover {
+  background-color: #f1f5f9;
+  transition: background 0.3s ease;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 992px) {
+  .header, .landing-page, .trending-container {
+    padding: 20px 30px;
+  }
+  
+  .landing-page {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  
+  .landing-page-search {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  .header-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .header, .landing-page, .trending-container, .table-container {
+    padding: 15px;
+  }
+  
+  .landing-page {
+    border-radius: 0 0 30px 30px;
+  }
+  
+  .landing-page-image-container {
+    display: none;
+  }
+  
+  .trending-cards {
+    flex-direction: column;
+  }
+  
+  th, td {
+    padding: 12px 10px;
+    font-size: 14px;
+  }
+}
+/*page 4 the final, last dance ,the golden,best wishes*/
+/*the same page 2 (add courses)*/
+.mod 
